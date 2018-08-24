@@ -19,7 +19,7 @@ import { WarningComponent } from './warning/warning.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServerComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

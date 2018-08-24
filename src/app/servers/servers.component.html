@@ -1,21 +1,8 @@
 <label>Server Name</label>
-<<<<<<< HEAD
-
-<input type="text" class="form-control" (input)="onInputServerName($event)">
-
-<p>{{serverName}}</p>
-
-<button class="btn btn-success" [disabled]="!allowServers" (click)="onServerCreation()">Add Server</button>
-
-=======
 <!-- <input type="text" class="form-control" (input)="onInputServerName($event)"> -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
 <!-- <p>{{serverName}}</p> -->
-<button 
- class="btn btn-success"
- [disabled]="!allowServers" 
- (click)="onServerCreation()">Add Server</button>
->>>>>>> e987230454ea4b4271cfb8b1f7bbf4bad0961382
+<button class="btn btn-success" [disabled]="!allowServers" (click)="onServerCreation()">Add Server</button>
 <app-server></app-server>
 <p>{{allowServers}}</p>
 <p>{{serverCreationStatus}}</p>

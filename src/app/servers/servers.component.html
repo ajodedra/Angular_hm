@@ -3,6 +3,6 @@
 <input type="text" class="form-control" [(ngModel)]="serverName">
 <!-- <p>{{serverName}}</p> -->
 <button class="btn btn-success" [disabled]="!allowServers" (click)="onServerCreation()">Add Server</button>
-<app-server></app-server>
 <p>{{allowServers}}</p>
 <p>{{serverCreationStatus}}</p>
+<app-server *ngFor="let sr of servers"></app-server>

@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-danger" (click)="activeToggle()">
+  Display Details</button>
+
+<p *ngIf="isActive">
+  toggle works!
+</p>
+<li *ngFor="let item of item2;let ind = index" [ngStyle]="{'backgroundColor': ind >= 5 ? 'blue':'red'}" [ngClass]="{'whiteClr': ind >= 5}">{{ind}}</li>

@@ -7,13 +7,15 @@ import { ServersComponent } from './servers/servers.component';
 import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
 import { UsersComponent } from './users/users.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServersComponent,
-    UsersComponent/*,
+    UsersComponent,
+    ToggleComponent/*,
     WarningComponent,
     SuccessComponent*/
   ],
